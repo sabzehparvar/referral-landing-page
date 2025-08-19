@@ -392,3 +392,19 @@ a.uk-link-heading:hover {
 }
 
 /* ------------------------------------------------------------------  */
+
+.ui-app-download-button {
+  
+  width: 230px;
+  height: 64px;
+}
+
+.ui-pink-line::before{
+  content: '';
+  display: block;    
+  width: 60px ;
+  height: 8px;
+  background-color: #E83388;
+  border-radius: 25px;
+  margin-bottom: 20px;
+}
