@@ -1,0 +1,392 @@
+.fontface-vazirmatn {
+  font-family: "VazirMatn" !important;
+}
+
+.fontface-vazir-fa {
+  font-family: "VazirMatnFa" !important;
+}
+
+html {
+  font-family: "VazirMatn";
+  font-size: 14px;
+  line-height: 1.7;
+  color: #2d354a;
+}
+
+/* override  */
+
+.uk-link,
+a {
+  color: #4e91e6;
+}
+
+.uk-link-toggle:hover .uk-link,
+.uk-link:hover,
+a:hover {
+  color: #0f6ecd;
+}
+
+h1,
+.uk-h1,
+h2,
+.uk-h2,
+h3,
+.uk-h3,
+h4,
+.uk-h4,
+h5,
+.uk-h5,
+h6,
+.uk-h6,
+.uk-heading-xsmall,
+.uk-heading-small,
+.uk-heading-medium,
+.uk-heading-large,
+.uk-heading-xlarge,
+.uk-heading-2xlarge,
+.uk-heading-3xlarge {
+  font-family: "VazirMatn";
+  font-weight: bold;
+  color: #081f3c;
+  line-height: auto !important;
+}
+
+* + .uk-h1,
+* + .uk-h2,
+* + .uk-h3,
+* + .uk-h4,
+* + .uk-h5,
+* + .uk-h6,
+* + .uk-heading-2xlarge,
+* + .uk-heading-3xlarge,
+* + .uk-heading-large,
+* + .uk-heading-medium,
+* + .uk-heading-small,
+* + .uk-heading-xsmall,
+* + .uk-heading-xlarge,
+* + h1,
+* + h2,
+* + h3,
+* + h4,
+* + h5,
+* + h6 {
+  margin-top: 20px;
+}
+
+.uk-hr,
+hr {
+  border-top: 1px solid #f2f5f6;
+}
+
+.uk-link-muted a,
+.uk-link-toggle .uk-link-muted,
+a.uk-link-muted {
+  color: #718e9c;
+}
+
+.uk-link-muted a:hover,
+.uk-link-toggle:hover .uk-link-muted,
+a.uk-link-muted:hover {
+  color: #081f3c;
+}
+
+.uk-link-text a:hover,
+.uk-link-toggle:hover .uk-link-text,
+a.uk-link-text:hover {
+  color: #718e9c;
+}
+
+.uk-link-heading a:hover,
+.uk-link-toggle:hover .uk-link-heading,
+a.uk-link-heading:hover {
+  color: #4e91e6;
+}
+
+.uk-heading-xsmall {
+  font-size: 1rem;
+}
+
+.uk-heading-small {
+  font-size: 1rem;
+}
+
+.uk-heading-medium {
+  font-size: 1.15rem;
+}
+
+.uk-heading-large {
+  font-size: 1.25rem;
+}
+
+.uk-heading-xlarge {
+  font-size: 1.3rem;
+}
+
+.uk-heading-2xlarge {
+  font-size: 1.5rem;
+}
+
+.uk-heading-3xlarge {
+  font-size: 1.75rem;
+}
+
+@media (min-width: 960px) {
+  .uk-heading-xsmall {
+    font-size: 1rem;
+  }
+
+  .uk-heading-small {
+    font-size: 1rem;
+  }
+
+  .uk-heading-medium {
+    font-size: 1.25rem;
+  }
+
+  .uk-heading-large {
+    font-size: 1.5rem;
+  }
+
+  .uk-heading-xlarge {
+    font-size: 1.75rem;
+  }
+
+  .uk-heading-2xlarge {
+    font-size: 2rem;
+  }
+
+  .uk-heading-3xlarge {
+    font-size: 2.25rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .uk-heading-xsmall {
+    font-size: 1.1rem;
+  }
+
+  .uk-heading-small {
+    font-size: 1.25rem;
+  }
+
+  .uk-heading-medium {
+    font-size: 1.5rem;
+  }
+
+  .uk-heading-large {
+    font-size: 2rem;
+  }
+
+  .uk-heading-xlarge {
+    font-size: 2.5rem;
+  }
+
+  .uk-heading-2xlarge {
+    font-size: 2.75rem;
+  }
+
+  .uk-heading-3xlarge {
+    font-size: 3.5rem;
+  }
+}
+
+.uk-button .ti {
+  font-size: 18px;
+}
+
+.uk-button-primary {
+  background-color: #317ff5;
+  color: #fff;
+}
+
+.uk-button-primary:hover {
+  background-color: #2469d2;
+  color: #fff;
+}
+
+.uk-button-primary.uk-active,
+.uk-button-primary:active {
+  background-color: #0e6dcd;
+  color: #fff;
+}
+
+.uk-section-default {
+  background: transparent;
+}
+
+.uk-section-muted {
+  background: #fafaff;
+}
+
+.uk-nav-default .uk-nav-sub a {
+  padding: 4px 0;
+  color: #718e9c;
+}
+
+.uk-nav-default .uk-nav-sub a:hover {
+  color: #081f3c;
+}
+
+.uk-nav-primary .uk-nav-sub a {
+  color: #718e9c;
+}
+
+.uk-nav-primary .uk-nav-sub a:hover {
+  color: #718e9c;
+}
+
+.uk-navbar-container:not(.uk-navbar-transparent) {
+  background: #f8f8f8;
+}
+
+.uk-navbar-container:not(.uk-navbar-transparent) {
+  background: #f8f8f8;
+}
+
+.uk-height-min-xsmall {
+  min-height: 100px;
+}
+
+.uk-text-lead {
+  font-size: 1.1rem;
+  color: #081f3c;
+}
+
+.uk-text-meta {
+  font-size: 0.875rem;
+  color: #718e9c;
+}
+
+.uk-text-meta > a {
+  color: #718e9c;
+}
+
+.uk-text-meta > a:hover {
+  color: #081f3c;
+}
+
+.uk-text-small {
+  font-size: 0.875rem;
+}
+
+.uk-text-large {
+  font-size: 1.5rem;
+}
+
+.uk-text-default {
+  font-size: 14px;
+}
+
+.uk-text-light {
+  font-weight: 300;
+}
+
+.uk-text-normal {
+  font-weight: 400;
+}
+
+.uk-text-bold {
+  font-weight: 700;
+}
+
+.uk-text-lighter {
+  font-weight: lighter;
+}
+
+.uk-text-bolder {
+  font-weight: bolder;
+}
+
+.uk-border-rounded {
+  border-radius: 12px;
+}
+
+.uk-border-rounded-xsmall {
+  border-radius: 4px;
+}
+
+.uk-border-rounded-small {
+  border-radius: 8px;
+}
+
+.uk-border-rounded-medium {
+  border-radius: 16px;
+}
+
+.uk-border-rounded-large {
+  border-radius: 24px;
+}
+
+.uk-border-rounded-xlarge {
+  border-radius: 32px;
+}
+
+.uk-border-rounded-2xlarge {
+  border-radius: 40px;
+}
+
+.uk-padding {
+  padding: 30px;
+}
+
+@media (min-width: 1200px) {
+  .uk-padding {
+    padding: 40px;
+  }
+}
+
+.uk-padding-small {
+  padding: 20px;
+}
+
+.uk-padding-large {
+  padding: 40px;
+}
+
+@media (min-width: 1200px) {
+  .uk-padding-large {
+    padding: 60px;
+  }
+}
+
+@supports (filter: blur(0)) {
+  .uk-box-shadow-bottom::after {
+    background: #444;
+  }
+}
+
+.uk-logo {
+  font-family: "VazirMatn";
+  color: #081f3c;
+}
+
+.uk-logo:hover {
+  color: #081f3c;
+}
+
+.uk-accordion .uk-open {
+  background-color: #f5f7f9;
+}
+
+.uk-accordion-title::before {
+  content: "";
+  width: 1.4em;
+  height: 1.4em;
+  margin-right: 10px;
+  float: left;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2213%22%20height%3D%2213%22%20viewBox%3D%220%200%2013%2013%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Crect%20fill%3D%22%23317FF5%22%20width%3D%2213%22%20height%3D%221%22%20x%3D%220%22%20y%3D%226%22%20%2F%3E%0A%20%20%20%20%3Crect%20fill%3D%22%23317FF5%22%20width%3D%221%22%20height%3D%2213%22%20x%3D%226%22%20y%3D%220%22%20%2F%3E%0A%3C%2Fsvg%3E");
+
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.uk-open > .uk-accordion-title::before {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2213%22%20height%3D%2213%22%20viewBox%3D%220%200%2013%2013%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Crect%20fill%3D%22%23317FF5%22%20width%3D%2213%22%20height%3D%221%22%20x%3D%220%22%20y%3D%226%22%20%2F%3E%0A%3C%2Fsvg%3E");
+}
+@media (max-width: 768px) {
+  .uk-text-large {
+    font-size: 1.2rem;
+  }
+}
+
+/* ------------------------------------------------------------------  */
