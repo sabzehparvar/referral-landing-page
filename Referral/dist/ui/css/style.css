@@ -8,9 +8,11 @@
 
 html {
   font-family: "VazirMatn";
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.7;
   color: #2d354a;
+  background-color: #F4F7FB ;
+
 }
 
 /* override  */

@@ -14,11 +14,11 @@
   <meta name="theme-color" content="#ffffff" />
   <meta name="referrer" content="origin-when-cross-origin" />
 
-  <link href="dist/ui/img/favicon/mask-icon.svg" rel="mask-icon" color="#" />
-  <link href="dist/ui/img/favicon/apple-touch-icon-precomposed.png" rel="apple-touch-icon-precomposed" />
-  <link href="dist/ui/img/favicon/favicon.ico" rel="icon" sizes="any" />
-  <link href="dist/ui/img/favicon/favicon-192x192.png" rel="icon" sizes="192x192" type="image/png" />
-  <link href="dist/ui/img/favicon/favicon.svg" rel="icon" type="image/svg+xml" />
+  <link href="dist/ui/icon/favicon/mask-icon.svg" rel="mask-icon" color="#" />
+  <link href="dist/ui/icon/favicon/apple-touch-icon-precomposed.png" rel="apple-touch-icon-precomposed" />
+  <link href="dist/ui/icon/favicon/favicon.ico" rel="icon" sizes="any" />
+  <link href="dist/ui/icon/favicon/favicon-192x192.png" rel="icon" sizes="192x192" type="image/png" />
+  <link href="dist/ui/icon/favicon/favicon.svg" rel="icon" type="image/svg+xml" />
 
   <link href="../../cdn/pkg/uikit/css/uikit-rtl.min.css" rel="stylesheet" />
   <link href="../../cdn/pkg/vazir/css/font-face.css" rel="stylesheet" />
@@ -27,15 +27,53 @@
 </head>
 
 <body>
-  <header class="uk-navbar-container uk-navbar-transparent">
-    <div class="uk-container">
-      <a href="https://www.724.ir/" target="_self" class="uk-navbar-item uk-logo">
-        <img src="dist/ui/img/logo-724.svg" width="72" height="72" alt="اپلیکیشن پرداخت ۷۲۴" class="uk-preserve"
-          uk-svg />
-      </a>
-    </div>
-  </header>
+
   <main>
+    <!-- slideshow  -->
+    <div class="uk-section uk-section-default uk-padding-remove-top">
+      <div class="uk-container uk-container-large uk-position-relative">
+        <div class="uk-position-absolute uk-margin-medium-top">
+          <img src="./dist/ui/img/Elipse.svg" alt="">
+        </div>
+
+        <div class="uk-container">
+          <a href="https://www.724.ir/" target="_self" class="uk-navbar-item uk-logo">
+            <img src="dist/ui/icon/logo-724.svg" width="72" height="72" alt="اپلیکیشن پرداخت ۷۲۴" class="uk-preserve"
+              uk-svg />
+          </a>
+        </div>
+
+        <div uk-slideshow="animation: push" class="uk-margin-top">
+
+          <div class="uk-position-relative uk-visible-toggle uk-light " tabindex="-1">
+
+            <div class="uk-slideshow-items uk-border-rounded-2xlarge uk-height-max-large">
+              <div>
+                <img src="./dist/ui/img/1.jpg" alt="" uk-cover>
+              </div>
+              <div>
+                <img src="./dist/ui/img/2.jpg" alt="" uk-cover>
+              </div>
+              <div>
+                <img src="./dist/ui/img/3.jpg" alt="" uk-cover>
+              </div>
+            </div>
+
+            <a dir="rtl" class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous
+              uk-slideshow-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next
+              uk-slideshow-item="next"></a>
+
+          </div>
+
+          <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin"></ul>
+
+        </div>
+
+      </div>
+
+    </div>
+
   </main>
 </body>
 
