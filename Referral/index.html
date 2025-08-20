@@ -68,10 +68,27 @@
         </div>
         <div class="uk-flex uk-flex-center">
           <button
-            class="uk-button uk-button-primary uk-border-pill uk-margin-small-top uk-margin-bottom ui-app-download-button">
+            class="uk-button uk-button-primary uk-border-pill uk-margin-small-top uk-margin-bottom ui-app-download-button"
+            uk-toggle="target: #QRModal">
             <img src="./dist/ui/icon/ic-download.svg" width="30" alt="دانلود 724">
-            دانلود اپلیکیشن ۷۲۴
+            نصب اپلیکیشن ۷۲۴
           </button>
+        </div>
+
+
+        <div id="QRModal" class="uk-flex-top" uk-modal>
+          <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical uk-border-rounded-large uk-text-center">
+            <h2 class="uk-modal-title">دانلود اپلیکیشن ۷۲۴</h2>
+            <p>برای نصب اپلیکیشن ۷۲۴، رمزینه‌ی زیر را در گوشی موبایل خود اسکن کنید
+              <br>
+              و یا برای دانلود اپلیکیشن، از طریق دکمه زیر وارد شوید.
+            </p>
+            <img src="./dist/ui/img/qr.svg" alt="دانلود اپلیکیشن 724">
+            <a
+              class="uk-button uk-button-primary uk-border-pill ui-app-download-button uk-display-block uk-margin-auto uk-margin-top">
+              دانلود اپلیکیشن ۷۲۴
+            </a>
+          </div>
         </div>
 
         <div class="uk-flex-middle uk-margin-large-top uk-flex-between" uk-grid>
@@ -94,7 +111,6 @@
       </div>
 
     </div>
-
   </main>
 </body>
 
