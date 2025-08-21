@@ -11,8 +11,7 @@ html {
   font-size: 16px;
   line-height: 1.7;
   color: #2d354a;
-  background-color: #F4F7FB ;
-
+  background-color: #f4f7fb;
 }
 
 /* override  */
@@ -394,55 +393,51 @@ a.uk-link-heading:hover {
 /* ------------------------------------------------------------------  */
 
 .ui-app-download-button {
-  
   width: 230px;
   height: 64px;
 }
 
-.ui-pink-line::before{
-  content: '';
-  display: block;    
-  width: 60px ;
+.ui-pink-line::before {
+  content: "";
+  display: block;
+  width: 60px;
   height: 8px;
-  background-color: #E83388;
+  background-color: #e83388;
   border-radius: 25px;
   margin-bottom: 20px;
 }
-.ui-hero-slideshow .uk-slideshow-items{
+.ui-hero-slideshow .uk-slideshow-items {
   max-height: 680px;
   max-width: unset !important;
   min-width: 85% !important;
 }
-.ui-hero-slideshow .uk-slideshow-nav{
+.ui-hero-slideshow .uk-slideshow-nav {
   height: 15px;
 }
-.ui-hero-slideshow .uk-slideshow-nav li a{
+.ui-hero-slideshow .uk-slideshow-nav li a {
   border: none;
-  background-color: #4F3D451A;
+  background-color: #4f3d451a;
   transition: 0.5s;
-
 }
-.ui-hero-slideshow .uk-slideshow-nav li.uk-active a{
-  background-color: #E83388;
+.ui-hero-slideshow .uk-slideshow-nav li.uk-active a {
+  background-color: #e83388;
   width: 16px;
   height: 16px;
   transition: 0.5s;
-
 }
-.ui-hero-slideshow .uk-slidenav{
-width: 48;
-height: 48;
-background: #FFFFFF;
-box-shadow: 0px 0px 35px 0px #E8338826;
-border-radius: 50%;
-
+.ui-hero-slideshow .uk-slidenav {
+  width: 48;
+  height: 48;
+  background: #ffffff;
+  box-shadow: 0px 0px 35px 0px #e8338826;
+  border-radius: 50%;
 }
 .ui-hero-slideshow .uk-slidenav svg {
-   /* width: 7px !important; */
+  /* width: 7px !important; */
   height: unset !important;
   padding: 3px;
 }
 
 .ui-hero-slideshow .uk-slidenav polyline {
-  stroke: #E83388 !important; /* pink line */
+  stroke: #e83388 !important;
 }
