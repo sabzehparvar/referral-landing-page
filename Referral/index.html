@@ -45,8 +45,11 @@
         <!-- Slideshow  -->
         <div uk-slideshow="animation: fade; autoplay: true" class="uk-margin-top ui-hero-slideshow">
 
-          <div class="uk-position-relative uk-visible-toggle uk-flex uk-flex-middle uk-flex-between " tabindex="-1">
-            <a class="uk-position-small" href uk-slidenav-previous uk-slideshow-item="next"></a>
+          <div class="uk-position-relative uk-visible-toggle uk-flex uk-flex-middle uk-flex-around " tabindex="-1">
+            <a class="uk-position-small uk-position-center-right-out uk-visible@xl" href uk-slideshow-item="next">
+              <img src="./dist/ui/icon/ic-chevron-right.svg" alt="" class="ui-arrow">
+
+            </a>
             <div class="uk-slideshow-items uk-border-rounded-2xlarge">
               <div>
                 <img src="./dist/ui/img/1.jpg" alt="" uk-cover>
@@ -60,7 +63,10 @@
             </div>
 
 
-            <a class=" uk-position-small" href uk-slidenav-next uk-slideshow-item="previous"></a>
+            <a class=" uk-position-small uk-position-center-left-out uk-visible@xl" href uk-slideshow-item="previous">
+              <img src="./dist/ui/icon/ic-chevron-left.svg" alt="" class="ui-arrow">
+
+            </a>
           </div>
 
           <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-flex-middle uk-margin"></ul>
@@ -128,7 +134,8 @@
             <h2 class="uk-display-block uk-heading-large">چطوری کد دعوت رو بفرستم؟</h2>
           </div>
         </div>
-        <div id="MobileCarousel" uk-slideshow="animation: slide; autoplay: true" class="uk-text-center uk-margin-medium-top">
+        <div id="MobileCarousel" uk-slideshow="animation: slide; autoplay: true"
+          class="uk-text-center uk-margin-medium-top">
           <div class="uk-position-relative uk-visible-toggle " tabindex="-1">
 
             <div class="uk-slideshow-items">
@@ -141,17 +148,15 @@
               </div>
               <div>
                 <img src="./dist/ui/img/mobile-3.png" alt="" class="uk-height-1-1">
-                
+
               </div>
             </div>
 
-            <a class="uk-position-center-left uk-position-small" href
-              uk-slideshow-item="previous">
-            <img src="./dist/ui/icon/left-arrow.svg" alt="">
+            <a class="uk-position-center-left uk-position-small" href uk-slideshow-item="previous">
+              <img src="./dist/ui/icon/ic-arrow-left.svg" alt="">
             </a>
-            <a class="uk-position-center-right uk-position-small" href
-              uk-slideshow-item="next">
-            <img src="./dist/ui/icon/right-arrow.svg" alt="">
+            <a class="uk-position-center-right uk-position-small" href uk-slideshow-item="next">
+              <img src="./dist/ui/icon/ic-arrow-right.svg" alt="">
             </a>
             <ul class="uk-slideshow-nav uk-dotnav uk-flex uk-flex-center"></ul>
           </div>

@@ -419,10 +419,16 @@ a.uk-link-heading:hover {
   left: 50%;
   transform: translateX(-50%);
 }
+.ui-hero-slideshow .ui-arrow{
+      background: white;
+    border-radius: 50%;
+    padding: 5px;
+
+}
 .ui-hero-slideshow .uk-slideshow-items {
   max-height: 680px;
   max-width: unset !important;
-  min-width: 85% !important;
+  /* min-width: 85% !important; */
 }
 .ui-hero-slideshow .uk-slideshow-nav {
   height: 15px;
