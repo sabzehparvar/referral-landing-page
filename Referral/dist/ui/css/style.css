@@ -441,3 +441,12 @@ a.uk-link-heading:hover {
 .ui-hero-slideshow .uk-slidenav polyline {
   stroke: #e83388 !important;
 }
+.ui-ellipse-1{
+  z-index: -10;
+}
+.ui-ellipse-2{
+  position: absolute;
+  top: -50%;
+  left: 0;
+  z-index: -1;
+}
