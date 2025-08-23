@@ -393,8 +393,7 @@ a.uk-link-heading:hover {
 /* ------------------------------------------------------------------  */
 
 .ui-app-download-button {
-  width: 230px;
-  height: 64px;
+  padding: 7px 22px;
 }
 
 .ui-pink-line-right::before {
@@ -491,4 +490,12 @@ a.uk-link-heading:hover {
     background: radial-gradient(circle at 50% 50%, rgba(208, 118, 224, 0.16) 0%, rgba(255, 255, 255, 0) 82%);
     z-index: -2;
 
+}
+
+.ui-carousel-desc-box{
+
+}
+.ui-qr-border{
+  border: 1px solid rgba(242, 243, 247, 1);
+  border-radius: 16px;
 }
