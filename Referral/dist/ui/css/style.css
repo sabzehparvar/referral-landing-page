@@ -418,11 +418,10 @@ a.uk-link-heading:hover {
   left: 50%;
   transform: translateX(-50%);
 }
-.ui-hero-slideshow .ui-arrow{
-      background: white;
-    border-radius: 50%;
-    padding: 5px;
-
+.ui-hero-slideshow .ui-arrow {
+  background: white;
+  border-radius: 50%;
+  padding: 5px;
 }
 .ui-hero-slideshow .uk-slideshow-items {
   max-height: 680px;
@@ -469,33 +468,64 @@ a.uk-link-heading:hover {
   z-index: -1;
 }
 .ui-gradient-1 {
-     width: 758px;
-    height: 633px;
-    filter: blur(100px);
-    position: absolute;
-    top: -300px;
-    border-radius: 50%;
-    background: radial-gradient(circle at 50% 50%, rgba(208, 118, 224, 0.16) 0%, rgba(255, 255, 255, 0) 82%);
-    z-index: -2;
-
+  width: 758px;
+  height: 633px;
+  filter: blur(100px);
+  position: absolute;
+  top: -300px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(208, 118, 224, 0.16) 0%,
+    rgba(255, 255, 255, 0) 82%
+  );
+  z-index: -2;
 }
 .ui-gradient-2 {
-     width: 758px;
-    height: 633px;
-    filter: blur(100px);
-    position: absolute;
-    top: 300px;
-    left: 230px;
-    border-radius: 50%;
-    background: radial-gradient(circle at 50% 50%, rgba(208, 118, 224, 0.16) 0%, rgba(255, 255, 255, 0) 82%);
-    z-index: -2;
-
+  width: 758px;
+  height: 633px;
+  filter: blur(100px);
+  position: absolute;
+  top: 300px;
+  left: 230px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(208, 118, 224, 0.16) 0%,
+    rgba(255, 255, 255, 0) 82%
+  );
+  z-index: -2;
 }
 
-.ui-carousel-desc-box{
-
+.ui-carousel-desc-line {
+  border: 1px solid black;
+  border-right: none;
+  border-bottom: none;
+  height: 15px;
+  margin: 10px 0;
+  position: relative;
 }
-.ui-qr-border{
+/* .ui-carousel-desc-line::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  width: 101%;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.55);
+  transition: all 0.5s ease;
+}
+
+.ui-carousel-desc-line:hover::before {
+  background: black;
+  width: 0;
+} */
+
+.ui-carousel-desc {
+  color: rgba(45, 53, 74, 1);
+}
+.ui-qr-border {
   border: 1px solid rgba(242, 243, 247, 1);
   border-radius: 16px;
 }
