@@ -540,6 +540,9 @@ a.uk-link-heading:hover {
 .ui-mobile-carousel-arrow {
   width: 40px;
 }
+#MobileCarousel .ui-ellipse-1 img{
+  min-width: 450px;
+}
 @media (max-width: 640px) {
   .ui-carousel-desc:not(.uk-active) {
     display: none;
