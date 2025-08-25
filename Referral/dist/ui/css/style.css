@@ -375,14 +375,15 @@ a.uk-link-heading:hover {
   height: 1.4em;
   margin-right: 10px;
   float: left;
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2213%22%20height%3D%2213%22%20viewBox%3D%220%200%2013%2013%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Crect%20fill%3D%22%23317FF5%22%20width%3D%2213%22%20height%3D%221%22%20x%3D%220%22%20y%3D%226%22%20%2F%3E%0A%20%20%20%20%3Crect%20fill%3D%22%23317FF5%22%20width%3D%221%22%20height%3D%2213%22%20x%3D%226%22%20y%3D%220%22%20%2F%3E%0A%3C%2Fsvg%3E");
-
+  background-image: url('../icon/ic-plus.svg');
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  transition: 400ms;
 }
 
 .uk-open > .uk-accordion-title::before {
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2213%22%20height%3D%2213%22%20viewBox%3D%220%200%2013%2013%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Crect%20fill%3D%22%23317FF5%22%20width%3D%2213%22%20height%3D%221%22%20x%3D%220%22%20y%3D%226%22%20%2F%3E%0A%3C%2Fsvg%3E");
+  background-image: url('../icon/ic-plus.svg');
+  transform: rotate(45deg);
 }
 @media (max-width: 768px) {
   .uk-text-large {
@@ -568,6 +569,12 @@ a.uk-link-heading:hover {
 #FaqAccordion > li:nth-child(even) {
   background-color: rgba(245, 248, 251, 1);
 }
+.ui-faq-gradient {
+  z-index: -1;
+  position: absolute;
+  right: -190px;
+  top: -242px;
+}
 /* #VideoPlayerWrapper video {
   max-height: 600px;
 } */
@@ -583,7 +590,7 @@ a.uk-link-heading:hover {
     aspect-ratio: 1/1 !important;
   }
 }
-.plyr{
+.plyr {
   border-radius: 40px;
 }
 .plyr__controls {
