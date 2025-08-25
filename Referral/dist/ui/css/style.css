@@ -629,17 +629,19 @@ a.uk-link-heading:hover {
 .faq-arrow.rotated {
   transform: rotate(180deg);
 }
+@media (max-width: 640px) {
+  #MobileCarousel .uk-slideshow-items {
+    aspect-ratio: 1/1 !important;
+  }
+  #FaqToggleBtn {
+    margin-bottom: 100px;
+  }
+}
 
 /* overwrite  */
 
 .uk-accordion-content ol li {
   padding-right: 20px;
-}
-
-@media (max-width: 640px) {
-  .uk-slideshow-items {
-    aspect-ratio: 1/1 !important;
-  }
 }
 .plyr {
   border-radius: 40px;

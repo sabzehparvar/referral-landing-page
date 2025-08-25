@@ -49,13 +49,25 @@
             </a>
             <div class="uk-slideshow-items uk-border-rounded-2xlarge">
               <div>
-                <img src="./dist/ui/img/1.jpg" alt="" uk-cover>
+                <picture>
+                  <source media="(min-width:768px)" srcset="./dist/ui/img/1.jpg" uk-cover>
+                  <source media="(max-width:767.98px)" srcset="./dist/ui/img/1.jpg" uk-cover>
+                  <img class="" src="./dist/ui/img/1.jpg" alt="اسکار جهانی کسب و کار" uk-cover>
+                </picture>
               </div>
               <div>
-                <img src="./dist/ui/img/2.jpg" alt="" uk-cover>
+                <picture>
+                  <source media="(min-width:768px)" srcset="./dist/ui/img/2.jpg" uk-cover>
+                  <source media="(max-width:767.98px)" srcset="./dist/ui/img/2.jpg" uk-cover>
+                  <img class="" src="./dist/ui/img/2.jpg" alt="اسکار جهانی کسب و کار" uk-cover>
+                </picture>
               </div>
               <div>
-                <img src="./dist/ui/img/3.jpg" alt="" uk-cover>
+                <picture>
+                  <source media="(min-width:768px)" srcset="./dist/ui/img/3.jpg" uk-cover>
+                  <source media="(max-width:767.98px)" srcset="./dist/ui/img/3.jpg" uk-cover>
+                  <img class="" src="./dist/ui/img/3.jpg" alt="اسکار جهانی کسب و کار" uk-cover>
+                </picture>
               </div>
             </div>
 
@@ -83,19 +95,18 @@
               <button class="uk-modal-close-default uk-position-center-left" type="button" uk-close></button>
               <h2 class="uk-card-title">دانلود اپلیکیشن ۷۲۴</h2>
             </div>
-              <div class="uk-padding-small ui-qr-border">
-                <p>برای نصب اپلیکیشن ۷۲۴، رمزینه‌ی زیر را در گوشی موبایل خود اسکن کنید
-                  <br>
-                  و یا برای دانلود اپلیکیشن، از طریق دکمه زیر وارد شوید.
-                </p>
-                <div class="uk-margin-medium-top">
-                  <img src="./dist/ui/img/qr.svg" alt="دانلود اپلیکیشن 724">
-                </div>
-                <a
-                  class="uk-button uk-button-primary uk-border-pill ui-app-download-button uk-margin-auto uk-margin-top">
-                  دانلود اپلیکیشن ۷۲۴
-                </a>
+            <div class="uk-padding-small ui-qr-border">
+              <p>برای نصب اپلیکیشن ۷۲۴، رمزینه‌ی زیر را در گوشی موبایل خود اسکن کنید
+                <br>
+                و یا برای دانلود اپلیکیشن، از طریق دکمه زیر وارد شوید.
+              </p>
+              <div class="uk-margin-medium-top">
+                <img src="./dist/ui/img/qr.svg" alt="دانلود اپلیکیشن 724">
               </div>
+              <a class="uk-button uk-button-primary uk-border-pill ui-app-download-button uk-margin-auto uk-margin-top">
+                دانلود اپلیکیشن ۷۲۴
+              </a>
+            </div>
           </div>
         </div>
         <!-- Video  -->
@@ -238,7 +249,10 @@
           <li class="uk-open">
             <a class="uk-accordion-title" href>
               <img src="./dist/ui/icon/ic-star.svg" width="24" class="uk-margin-left" alt="">
-              کجا می‌تونم کد معرف خودم رو پیدا کنم؟
+              <span>
+                کجا می‌تونم کد معرف خودم رو پیدا کنم؟
+
+              </span>
             </a>
             <div class="uk-accordion-content">
               <ol class="fontface-vazir-fa">
@@ -356,8 +370,8 @@
             </div>
           </li>
         </ul>
-        <div class="uk-text-center">
-          <button id="FaqToggleBtn" class="uk-button uk-button-link uk-text-primary uk-text-center uk-margin-top">
+        <div id="FaqToggleBtn" class="uk-text-center">
+          <button  class="uk-button uk-button-link uk-text-primary uk-text-center uk-margin-top">
             <span> نمایش بیشتر</span>
             <img src="./dist/ui/icon/ic-arrow-up.svg" width="16" alt="" class="faq-arrow">
           </button>
@@ -373,14 +387,13 @@
     });
 
     document.addEventListener('DOMContentLoaded', function () {
-      const btn = document.getElementById('FaqToggleBtn');
-      const btnText = document.querySelector('#FaqToggleBtn span');
-      const arrow = document.querySelector('#FaqToggleBtn .faq-arrow');
+      const btn = document.querySelector('#FaqToggleBtn button');
+      const btnText = document.querySelector('#FaqToggleBtn button span');
+      const arrow = document.querySelector('#FaqToggleBtn button .faq-arrow');
       const faqList = document.getElementById('FaqAccordion');
       const extras = faqList.querySelectorAll('ul > li:nth-child(n+4)');
       let expanded = false;
 
-      // Hide extra items initially
       extras.forEach(li => {
         li.classList.add('faq-collapsed');
         li.classList.remove('faq-expanded');
