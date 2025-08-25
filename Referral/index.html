@@ -19,7 +19,7 @@
   <link href="dist/ui/icon/favicon/favicon.ico" rel="icon" sizes="any" />
   <link href="dist/ui/icon/favicon/favicon-192x192.png" rel="icon" sizes="192x192" type="image/png" />
   <link href="dist/ui/icon/favicon/favicon.svg" rel="icon" type="image/svg+xml" />
-
+  <link href="../cdn/pkg/plyr/plyr.css" rel="stylesheet">
   <link href="../../cdn/pkg/uikit/css/uikit-rtl.min.css" rel="stylesheet" />
   <link href="../../cdn/pkg/vazir/css/font-face.css" rel="stylesheet" />
   <link href="./dist/ui/css/style.css" rel="stylesheet" />
@@ -110,7 +110,7 @@
             </p>
           </div>
 
-          <div id="VideoPlayer" class="uk-position-relative uk-height-1-1 uk-width-1-2@m">
+          <div id="VideoPlayerWrapper" class="uk-position-relative uk-height-1-1 uk-text-center uk-width-1-2@m">
             <div class="ui-ellipse-2">
               <img src="./dist/ui/img/Ellipse-2.svg" alt="">
             </div>
@@ -118,7 +118,7 @@
             </div>
             <div class="ui-gradient-2">
             </div>
-            <video id="player" playsinline controls class="uk-border-rounded-2xlarge">
+            <video id="Player">
               <source src="./dist/ui/video/sample-video.mp4" type="video/mp4" />
             </video>
           </div>
@@ -221,6 +221,7 @@
         </div>
       </div>
     </div>
+    <!-- FAQ  -->
     <div class="uk-section uk-section-default uk-padding-remove-top">
       <div class="uk-container uk-container-large">
         <div class="uk-width-1-3@m uk-text-justify ui-pink-line-right">
@@ -292,6 +293,13 @@
       </div>
     </div>
   </main>
+  <script src="../cdn/pkg/plyr/plyr.polyfilled.js"></script>
+  <script>
+    const player = new Plyr('#Player', {
+      controls: ['play-large', 'play', 'progress', 'current-time', 'mute', 'volume', 'fullscreen']
+    });
+
+  </script>
 </body>
 
 </html>

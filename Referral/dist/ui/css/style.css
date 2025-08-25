@@ -503,11 +503,10 @@ a.uk-link-heading:hover {
   border: 1px solid #2d354a30;
   border-right: none;
   border-bottom: none;
-  /* height: 15px; */
-  margin-bottom:10px;
+  margin-bottom: 10px;
   position: relative;
 }
-.ui-carousel-desc-title{
+.ui-carousel-desc-title {
   border-bottom: 1px solid #40414430;
   padding-bottom: 10px;
 }
@@ -569,6 +568,9 @@ a.uk-link-heading:hover {
 #FaqAccordion > li:nth-child(even) {
   background-color: rgba(245, 248, 251, 1);
 }
+/* #VideoPlayerWrapper video {
+  max-height: 600px;
+} */
 
 /* overwrite  */
 
@@ -580,4 +582,14 @@ a.uk-link-heading:hover {
   .uk-slideshow-items {
     aspect-ratio: 1/1 !important;
   }
+}
+.plyr{
+  border-radius: 40px;
+}
+.plyr__controls {
+  padding-bottom: 30px !important;
+}
+:root {
+  --plyr-color-main: #e83388;
+  --plyr-video-background: transparent;
 }
