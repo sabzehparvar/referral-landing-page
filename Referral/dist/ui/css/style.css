@@ -393,8 +393,30 @@ a.uk-link-heading:hover {
 
 /* ------------------------------------------------------------------  */
 
-.ui-app-download-button {
+#AppDownloadBtn button {
   padding: 7px 22px;
+}
+@media (max-width: 640px) {
+  #AppDownloadBtn {
+    padding: 15px 0;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.1px);
+    -webkit-backdrop-filter: blur(9.1px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+  }
+  #AppDownloadBtn button {
+    margin: 0 !important;
+  }
+  #QRModal img{
+    width: 145px;
+}
 }
 
 .ui-pink-line-right::before {
@@ -427,7 +449,11 @@ a.uk-link-heading:hover {
 .ui-hero-slideshow .uk-slideshow-items {
   max-height: 680px;
   max-width: unset !important;
-  /* min-width: 85% !important; */
+}
+@media (min-width: 960px) {
+  .ui-hero-slideshow .uk-slideshow-items {
+    min-width: 95% !important;
+  }
 }
 .ui-hero-slideshow .uk-slideshow-nav {
   height: 15px;
@@ -449,11 +475,6 @@ a.uk-link-heading:hover {
   background: #ffffff;
   box-shadow: 0px 0px 35px 0px #e8338826;
   border-radius: 50%;
-}
-.ui-hero-slideshow .uk-slidenav svg {
-  /* width: 7px !important; */
-  height: unset !important;
-  padding: 3px;
 }
 
 .ui-hero-slideshow .uk-slidenav polyline {
@@ -557,7 +578,6 @@ a.uk-link-heading:hover {
     width: 20px;
   }
   .ui-pink-line-center::before {
-    
     position: absolute;
     bottom: 135%;
     right: 0;

@@ -44,9 +44,8 @@
         <div uk-slideshow="animation: fade; autoplay: true" class="uk-margin-top ui-hero-slideshow">
 
           <div class="uk-position-relative uk-visible-toggle uk-flex uk-flex-middle uk-flex-around " tabindex="-1">
-            <a class="uk-position-small uk-position-center-right-out uk-visible@m" href uk-slideshow-item="next">
+            <a class=" uk-position-center-right-out uk-visible@m" href uk-slideshow-item="next">
               <img src="./dist/ui/icon/ic-chevron-right.svg" alt="" class="ui-arrow">
-
             </a>
             <div class="uk-slideshow-items uk-border-rounded-2xlarge">
               <div>
@@ -61,7 +60,7 @@
             </div>
 
 
-            <a class=" uk-position-small uk-position-center-left-out uk-visible@m" href uk-slideshow-item="previous">
+            <a class="uk-position-center-left-out uk-visible@m" href uk-slideshow-item="previous">
               <img src="./dist/ui/icon/ic-chevron-left.svg" alt="" class="ui-arrow">
 
             </a>
@@ -70,9 +69,8 @@
           <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-flex-middle uk-margin"></ul>
 
         </div>
-        <div class="uk-flex uk-flex-center">
-          <button
-            class="uk-button uk-button-primary uk-border-pill uk-margin-small-top uk-margin-bottom ui-app-download-button"
+        <div id="AppDownloadBtn" class="uk-flex uk-flex-center">
+          <button class="uk-button uk-button-primary uk-border-pill uk-margin-small-top uk-margin-bottom"
             uk-toggle="target: #QRModal">
             <img src="./dist/ui/icon/ic-download.svg" width="30" alt="نصب اپلیکیشن ۷۲۴">
             نصب اپلیکیشن ۷۲۴
@@ -81,6 +79,7 @@
         <!-- QR Modal  -->
         <div id="QRModal" uk-modal>
           <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical uk-border-rounded-large uk-text-center">
+            <button class="uk-modal-close-default" type="button" uk-close></button>
             <h2 class="uk-card-title">دانلود اپلیکیشن ۷۲۴</h2>
             <div class="uk-padding-small ui-qr-border">
               <p>برای نصب اپلیکیشن ۷۲۴، رمزینه‌ی زیر را در گوشی موبایل خود اسکن کنید
@@ -98,8 +97,7 @@
         </div>
         <!-- Video  -->
         <div class="uk-flex-middle uk-margin-xlarge-top uk-flex-between" uk-grid>
-          <div id="VideoPlayerWrapper"
-            class="uk-position-relative uk-height-1-1 uk-flex uk-flex-center uk-width-1-2@m">
+          <div id="VideoPlayerWrapper" class="uk-position-relative uk-height-1-1 uk-flex uk-flex-center uk-width-1-2@m">
             <div class="ui-ellipse-2">
               <img src="./dist/ui/img/Ellipse-2.svg" alt="">
             </div>
