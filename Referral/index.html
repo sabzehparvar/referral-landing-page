@@ -292,7 +292,74 @@
               </ol>
             </div>
           </li>
+          <li>
+            <a class="uk-accordion-title" href>
+              <img src="./dist/ui/icon/ic-star.svg" width="24" class="uk-margin-left" alt="">
+              دوستم چه زمانی باید کد دعوتی که براش می‌فرستم رو در ۷۲۴ وارد کنه؟
+            </a>
+            <div class="uk-accordion-content">
+              <ol class="fontface-vazir-fa">
+                <li>اپلیکیشن ۷۲۴ رو باز کن.</li>
+                <li>
+                  از منوی پایین، روی گزینه‌ی «حساب کاربری» (گوشه‌ی پایین سمت چپ) بزن.
+                </li>
+                <li>
+                  وارد بخش «دعوت دوستان» شو.
+                </li>
+                <li>
+                  حالا کد دعوت مخصوص خودت رو می‌تونی ببینی و برای دوستانت بفرستی.
+                </li>
+              </ol>
+            </div>
+          </li>
+          <li>
+            <a class="uk-accordion-title" href>
+              <img src="./dist/ui/icon/ic-star.svg" width="24" class="uk-margin-left" alt="">
+              دوستم چه زمانی باید کد دعوتی که براش می‌فرستم رو در ۷۲۴ وارد کنه؟
+            </a>
+            <div class="uk-accordion-content">
+              <ol class="fontface-vazir-fa">
+                <li>اپلیکیشن ۷۲۴ رو باز کن.</li>
+                <li>
+                  از منوی پایین، روی گزینه‌ی «حساب کاربری» (گوشه‌ی پایین سمت چپ) بزن.
+                </li>
+                <li>
+                  وارد بخش «دعوت دوستان» شو.
+                </li>
+                <li>
+                  حالا کد دعوت مخصوص خودت رو می‌تونی ببینی و برای دوستانت بفرستی.
+                </li>
+              </ol>
+            </div>
+          </li>
+          <li>
+            <a class="uk-accordion-title" href>
+              <img src="./dist/ui/icon/ic-star.svg" width="24" class="uk-margin-left" alt="">
+              چه زمانی یه دعوت، موفق به حساب میاد؟
+            </a>
+            <div class="uk-accordion-content">
+              <ol class="fontface-vazir-fa">
+                <li>اپلیکیشن ۷۲۴ رو باز کن.</li>
+                <li>
+                  از منوی پایین، روی گزینه‌ی «حساب کاربری» (گوشه‌ی پایین سمت چپ) بزن.
+                </li>
+                <li>
+                  وارد بخش «دعوت دوستان» شو.
+                </li>
+                <li>
+                  حالا کد دعوت مخصوص خودت رو می‌تونی ببینی و برای دوستانت بفرستی.
+                </li>
+              </ol>
+            </div>
+          </li>
         </ul>
+        <div class="uk-text-center">
+          <button id="FaqToggleBtn" class="uk-button uk-button-link uk-text-primary uk-text-center uk-margin-top">
+            <span> نمایش بیشتر</span>
+            <img src="./dist/ui/icon/ic-arrow-up.svg" width="16" alt="" class="faq-arrow">
+          </button>
+        </div>
+
       </div>
     </div>
   </main>
@@ -302,6 +369,35 @@
       controls: ['play-large', 'play', 'progress', 'current-time', 'mute', 'volume', 'fullscreen']
     });
 
+    document.addEventListener('DOMContentLoaded', function () {
+      const btn = document.getElementById('FaqToggleBtn');
+      const btnText = document.querySelector('#FaqToggleBtn span');
+      const arrow = document.querySelector('#FaqToggleBtn .faq-arrow');
+      const faqList = document.getElementById('FaqAccordion');
+      const extras = faqList.querySelectorAll('ul > li:nth-child(n+4)');
+      let expanded = false;
+
+      // Hide extra items initially
+      extras.forEach(li => {
+        li.classList.add('faq-collapsed');
+        li.classList.remove('faq-expanded');
+      });
+
+      btn.addEventListener('click', function () {
+        expanded = !expanded;
+        extras.forEach(li => {
+          if (expanded) {
+            li.classList.remove('faq-collapsed');
+            li.classList.add('faq-expanded');
+          } else {
+            li.classList.add('faq-collapsed');
+            li.classList.remove('faq-expanded');
+          }
+        });
+        btnText.textContent = expanded ? 'نمایش کمتر' : 'نمایش بیشتر';
+        arrow.classList.toggle('rotated', expanded);
+      });
+    });
   </script>
 </body>
 

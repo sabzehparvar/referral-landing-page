@@ -414,9 +414,9 @@ a.uk-link-heading:hover {
   #AppDownloadBtn button {
     margin: 0 !important;
   }
-  #QRModal img{
+  #QRModal img {
     width: 145px;
-}
+  }
 }
 
 .ui-pink-line-right::before {
@@ -602,9 +602,27 @@ a.uk-link-heading:hover {
   right: -190px;
   top: -242px;
 }
-/* #VideoPlayerWrapper video {
-  max-height: 600px;
-} */
+#FaqAccordion > li.faq-collapsed {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: 0.5s ease;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  margin: 0 !important;
+}
+
+#FaqAccordion > li.faq-expanded {
+  max-height: 500px;
+  opacity: 1;
+  transition: 0.5s ease;
+}
+.faq-arrow {
+  transition: transform 0.3s;
+}
+.faq-arrow.rotated {
+  transform: rotate(180deg);
+}
 
 /* overwrite  */
 
