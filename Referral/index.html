@@ -244,7 +244,7 @@
           <li class="uk-open">
             <a class="uk-accordion-title" href>
               <img src="./dist/ui/icon/ic-star.svg" width="24" class="uk-margin-left" alt="">
-              <span>
+              <span class="uk-margin-left">
                 کجا می‌تونم کد معرف خودم رو پیدا کنم؟
 
               </span>
@@ -267,7 +267,25 @@
           <li>
             <a class="uk-accordion-title" href>
               <img src="./dist/ui/icon/ic-star.svg" width="24" class="uk-margin-left" alt="">
-              دوستم چه زمانی باید کد دعوتی که براش می‌فرستم رو در ۷۲۴ وارد کنه؟
+              <span class="uk-margin-left">
+
+                دوستم چه زمانی باید کد دعوتی که براش می‌فرستم رو در ۷۲۴ وارد کنه؟
+              </span>
+            </a>
+            <div class="uk-accordion-content">
+              <p class="uk-margin-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure id tenetur, quia
+                fugit iste laboriosam ad
+                aut quae delectus numquam recusandae! Atque asperiores minus nesciunt quaerat quasi quibusdam
+                consequatur doloribus.</p>
+            </div>
+          </li>
+          <li class="uk-open">
+            <a class="uk-accordion-title" href>
+              <img src="./dist/ui/icon/ic-star.svg" width="24" class="uk-margin-left" alt="">
+              <span class="uk-margin-left">
+                کجا می‌تونم کد معرف خودم رو پیدا کنم؟
+
+              </span>
             </a>
             <div class="uk-accordion-content">
               <ol class="fontface-vazir-fa">
@@ -287,7 +305,10 @@
           <li>
             <a class="uk-accordion-title" href>
               <img src="./dist/ui/icon/ic-star.svg" width="24" class="uk-margin-left" alt="">
-              چه زمانی یه دعوت، موفق به حساب میاد؟
+              <span class="uk-margin-left">
+
+                دوستم چه زمانی باید کد دعوتی که براش می‌فرستم رو در ۷۲۴ وارد کنه؟
+              </span>
             </a>
             <div class="uk-accordion-content">
               <ol class="fontface-vazir-fa">
@@ -304,66 +325,8 @@
               </ol>
             </div>
           </li>
-          <li>
-            <a class="uk-accordion-title" href>
-              <img src="./dist/ui/icon/ic-star.svg" width="24" class="uk-margin-left" alt="">
-              دوستم چه زمانی باید کد دعوتی که براش می‌فرستم رو در ۷۲۴ وارد کنه؟
-            </a>
-            <div class="uk-accordion-content">
-              <ol class="fontface-vazir-fa">
-                <li>اپلیکیشن ۷۲۴ رو باز کن.</li>
-                <li>
-                  از منوی پایین، روی گزینه‌ی «حساب کاربری» (گوشه‌ی پایین سمت چپ) بزن.
-                </li>
-                <li>
-                  وارد بخش «دعوت دوستان» شو.
-                </li>
-                <li>
-                  حالا کد دعوت مخصوص خودت رو می‌تونی ببینی و برای دوستانت بفرستی.
-                </li>
-              </ol>
-            </div>
-          </li>
-          <li>
-            <a class="uk-accordion-title" href>
-              <img src="./dist/ui/icon/ic-star.svg" width="24" class="uk-margin-left" alt="">
-              دوستم چه زمانی باید کد دعوتی که براش می‌فرستم رو در ۷۲۴ وارد کنه؟
-            </a>
-            <div class="uk-accordion-content">
-              <ol class="fontface-vazir-fa">
-                <li>اپلیکیشن ۷۲۴ رو باز کن.</li>
-                <li>
-                  از منوی پایین، روی گزینه‌ی «حساب کاربری» (گوشه‌ی پایین سمت چپ) بزن.
-                </li>
-                <li>
-                  وارد بخش «دعوت دوستان» شو.
-                </li>
-                <li>
-                  حالا کد دعوت مخصوص خودت رو می‌تونی ببینی و برای دوستانت بفرستی.
-                </li>
-              </ol>
-            </div>
-          </li>
-          <li>
-            <a class="uk-accordion-title" href>
-              <img src="./dist/ui/icon/ic-star.svg" width="24" class="uk-margin-left" alt="">
-              چه زمانی یه دعوت، موفق به حساب میاد؟
-            </a>
-            <div class="uk-accordion-content">
-              <ol class="fontface-vazir-fa">
-                <li>اپلیکیشن ۷۲۴ رو باز کن.</li>
-                <li>
-                  از منوی پایین، روی گزینه‌ی «حساب کاربری» (گوشه‌ی پایین سمت چپ) بزن.
-                </li>
-                <li>
-                  وارد بخش «دعوت دوستان» شو.
-                </li>
-                <li>
-                  حالا کد دعوت مخصوص خودت رو می‌تونی ببینی و برای دوستانت بفرستی.
-                </li>
-              </ol>
-            </div>
-          </li>
+
+
         </ul>
         <div id="FaqToggleBtn" class="uk-text-center">
           <button class="uk-button uk-button-link uk-text-primary uk-text-center uk-margin-top">
@@ -387,6 +350,11 @@
       const arrow = document.querySelector('#FaqToggleBtn button .faq-arrow');
       const faqList = document.getElementById('FaqAccordion');
       const extras = faqList.querySelectorAll('ul > li:nth-child(n+4)');
+
+      if (!extras.length) {
+        btn.classList.add('uk-hidden')
+        return
+      }
       let expanded = false;
 
       extras.forEach(li => {

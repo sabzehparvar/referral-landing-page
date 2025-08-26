@@ -372,11 +372,13 @@ a.uk-link-heading:hover {
 
 .uk-accordion-title::before {
   content: "";
-  width: 1.4em;
-  height: 1.4em;
-  margin-right: 10px;
-  float: left;
-  background-image: url("../icon/ic-plus.svg");
+  position: absolute;
+  left: 0; 
+  top: 2px;
+
+  width: 24px;
+  height: 24px;
+  background-image: url(../icon/ic-plus.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   transition: 400ms;
@@ -449,7 +451,6 @@ a.uk-link-heading:hover {
   box-shadow: 0px 0px 35px 0px rgba(232, 51, 136, 0.15);
 }
 .ui-hero-slideshow .uk-slideshow-items {
-  /* max-height: 680px; */
   aspect-ratio: 16 / 7 !important;
   max-width: unset !important;
   box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.05);
@@ -579,6 +580,9 @@ a.uk-link-heading:hover {
 #MobileCarousel .ui-ellipse-1 img {
   min-width: 450px;
 }
+#MobileCarousel .uk-slideshow-items{
+  aspect-ratio: 16 / 6 !important;
+}
 @media (max-width: 640px) {
   .ui-carousel-desc:not(.uk-active) {
     display: none;
@@ -628,6 +632,12 @@ a.uk-link-heading:hover {
 }
 #FaqAccordion .uk-accordion-title {
   font-size: 1.12rem;
+   display: flex;
+  align-items: center;
+  position: relative; 
+}
+#FaqAccordion .uk-accordion-content{
+  padding-right: 25px;
 }
 .faq-arrow {
   transition: transform 0.3s;
