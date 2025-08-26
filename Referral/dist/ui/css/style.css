@@ -449,9 +449,15 @@ a.uk-link-heading:hover {
   box-shadow: 0px 0px 35px 0px rgba(232, 51, 136, 0.15);
 }
 .ui-hero-slideshow .uk-slideshow-items {
-  max-height: 680px;
+  /* max-height: 680px; */
+  aspect-ratio: 16 / 7 !important;
   max-width: unset !important;
   box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.05);
+}
+@media (max-width: 736px) {
+   .ui-hero-slideshow .uk-slideshow-items {
+    aspect-ratio: 11 / 7 !important;
+  }
 }
 @media (min-width: 960px) {
   .ui-hero-slideshow .uk-slideshow-items {
