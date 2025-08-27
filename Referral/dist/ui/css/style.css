@@ -405,6 +405,7 @@ a.uk-link-heading:hover {
 .plyr {
   border-radius: 40px;
   max-width: 330px;
+  min-height: 300px;
 }
 .plyr__controls {
   padding-bottom: 30px !important;
@@ -631,7 +632,7 @@ a.uk-link-heading:hover {
   }
 }
 #FaqAccordion > li {
-  padding: 25px;
+  padding: 18px;
   border-radius: 20px;
   border-bottom: 1px solid rgba(49, 127, 245, 0.3);
   margin-top: 0;
