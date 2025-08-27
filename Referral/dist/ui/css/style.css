@@ -374,19 +374,19 @@ a.uk-link-heading:hover {
   content: "";
   position: absolute;
   left: 0;
-  top: 2px;
-
+  top: 50%;
   width: 24px;
   height: 24px;
   background-image: url(../icon/ic-plus.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   transition: 400ms;
+  transform: translateY(-50%);
 }
 
 .uk-open > .uk-accordion-title::before {
   background-image: url("../icon/ic-plus.svg");
-  transform: rotate(45deg);
+  transform: translateY(-50%) rotate(45deg);
 }
 @media (max-width: 768px) {
   .uk-text-large {
@@ -405,7 +405,7 @@ a.uk-link-heading:hover {
 .plyr {
   border-radius: 40px;
   max-width: 330px;
-  min-height: 300px;
+  min-height: 200px;
 }
 .plyr__controls {
   padding-bottom: 30px !important;
@@ -575,7 +575,7 @@ a.uk-link-heading:hover {
   padding-bottom: 10px;
 }
 .ui-carousel-desc {
-  color: #2D354A20;
+  color: #2d354a20;
   text-align: right;
   height: 220px;
 }
@@ -590,13 +590,13 @@ a.uk-link-heading:hover {
   color: inherit;
 }
 .ui-carousel-desc.uk-active {
-  color: #2D354A;
+  color: #2d354a;
 }
 .ui-carousel-desc.uk-active ul {
   opacity: 1;
 }
 .ui-carousel-desc.uk-active .ui-carousel-desc-line {
-  border-color: #2D354A;
+  border-color: #2d354a;
   width: 100%;
 }
 .ui-qr-border {
@@ -645,8 +645,8 @@ a.uk-link-heading:hover {
 #FaqAccordion > li:nth-child(even) {
   background-color: rgba(245, 248, 251, 1);
 }
-#FaqAccordion > li:nth-child(n +4) {
- display: none;
+#FaqAccordion > li:nth-child(n + 4) {
+  display: none;
 }
 .ui-faq-gradient {
   z-index: -1;
@@ -692,6 +692,6 @@ a.uk-link-heading:hover {
     aspect-ratio: 1/1 !important;
   }
   #FaqToggleBtn {
-    margin-bottom: 100px;
+    margin-bottom: 80px;
   }
 }
